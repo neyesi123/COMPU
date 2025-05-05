@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>FORMALIZACION DE LA LOGICA PROPOSICIONAL</h1>
+      </header>
+      <nav class="topnav" id="myTopnav">
+        <a href="#intro" class="active">Introduccion</a>
+        <a href="#pro">Proposiciones y letras proposicionales</a>
+        <a href="#conec">Conectores logicos</a>
+        <a href="#eje">Ejemplos de Formalizacion</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <main>
+        <article>
+          <a name="intro"></a>
+          <section>
+            <h2><u>Introduccion</u></h2>
+            <p>
+                La formalizacion en logica proposicional consiste en traducir enunciados del
+                lenguaje natural a un lenguaje formal utilizando simbolos logicos. Este proceso
+                permite analizar y evaluar la validez de argumentos de manera precisa. Tambien
+                se puede decir que es una rama de la logica matematica que estudia las proposi
+               ciones, es decir, las afirmaciones o oraciones a las que se les puede asignar un
+                valor de verdad.
+            </p>
+            <img src="IMG/primera.jpg" alt="logica">
+            
+          </section>
+          <a name="pro"></a>
+          <section>
+            <h2><u>Proposiciones y letras proposicionales</u></h2>
+            <p>
+                Una proposicion es una oracion declarativa que puede ser verdadera o falsa,
+                pero no ambas. En logica proposicional, cada proposicion se representa mediante
+                una letra proposicional, como (p, q o r...)
+            </p>
+            <img src="IMG/texto.jpg">
+          </section>
+          <a name="conec"></a>
+          <section>
+            <h2><u>Conectores logicos</u></h2>
+            <p>
+                Los conectores logicos permiten combinar proposiciones para formar expresiones
+                mas complejas:
+            </p>
+            <ul>
+                <li><i>Conjuncion</i> (∧) : p ∧q.
+                  <br> Es verdadera solo si ambas p y q son verdaderas.</li>
+                <li><i> Disyuncion</i> (∨) : p ∨ q. 
+                  <br>Es verdadera si al menos una de p o q es verdadera. </li>
+                <li><i> Negacion</i> (¬): ¬p. 
+                  <br> Es verdadera sipes falsa.</li>
+                <li> <i>Condicional</i> (→) :p → q. 
+                  <br> Es falsa solo sip es verdadera y q es falsa.</li>
+                <li><i>Bicondicional</i> (↔) : p ↔ q. 
+                  <br> Es verdadera si p yqtienen el mismo valor de verdad</li>
+                </ul>
+          </section>
+          <a name="eje"></a>
+          <section>
+            <h2><u>Ejemplos de Formalizacion</u></h2>
+             Consideremos los siguientes Ejemplos: 
+            <p> 1. ”Si llueve, entonces la calle esta mojada.”</p>
+            <ul>
+                <li> p: Llueve.</li>
+                <li> q: La calle esta mojada.</li>
+                <p> La formalizacion de este enunciado es: p → q.</p>
+            </ul>
+            <p>2.  ”Un dia tiene 24 hora y una semana tiene 7 dias.” </p>
+            <ul>
+                <li>p: un dia tiene 24 horas.</li>
+                <li>q: una semana tiene 7 dias  </li>
+                <p> La formalizacion de este enunciado es: p ∧ q.</p>
+            </ul> 
+            <p> 3.”Cermen canta o baila ” </p>
+              <ul>
+                <li>p: Carmen canta</li>
+                <li>q: Carmen baila</li>
+                <p> La formalizacion de este enunciado es: p ∨ q.</p>
+              </ul>
+            <p>4. ” Si y solo si Jorge gana dinero entoces sera solvente”</p>
+             <ul>
+              <li>p: Jorge gana dinero</li>
+              <li>q: sera solvente</li>
+              <p> La formalizacion de este enunciado es: p ↔ q.</p>
+             </ul>
+             <p>5.” No es cierto que lima sea capital de Peru” </p>
+             <ul>
+              <li>p:no es cierto que lima sea capital de Peru</li>
+              <p> La formalizacion de este enunciado es:  ¬p .</p>
+             </ul>
+          </section>
+        </article>
+      </main>
+    <footer>
+      <div>"GRACIAS POR VER ESTA PAGINA"...</div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</body>
+</html>
